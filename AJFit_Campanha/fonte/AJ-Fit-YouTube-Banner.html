@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>AJ Fit — Banner do YouTube</title>
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=block" rel="stylesheet">
+<style>
+body{margin:0}
+.comp{position:relative;width:2560px;height:1440px;overflow:hidden;background:radial-gradient(1800px 1100px at 52% 48%,#FFFFFF 0%,#F7F7F7 55%,#EFEFEF 100%);font-family:'Archivo',sans-serif;color:#060220}
+.abs{position:absolute}
+.grp{position:absolute;transform-origin:0 0}
+.anton{font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400}
+.skew{display:inline-block;transform:skewX(-8deg);transform-origin:left bottom}
+.lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.38)}
+.cap{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:rgba(255,255,255,0.38)}
+/* phone */
+.phone{position:absolute;left:0;top:0;width:730px;height:1538px;border-radius:118px;padding:18px;box-sizing:border-box;background:linear-gradient(135deg,#4a4d58 0%,#1b1c22 16%,#0d0d11 55%,#26272e 88%,#55586a 100%);transform:perspective(3200px) rotateY(-9deg) rotateZ(7.5deg);transform-origin:50% 50%;box-shadow:inset 0 0 0 2px rgba(255,255,255,0.20),inset 0 0 0 6px #050507,2px 1px 0 #2e3038,4px 2px 0 #292a31,6px 3px 0 #24252b,8px 4px 0 #1f2025,10px 5px 0 #1a1b1f,12px 6px 0 #16171a,70px 90px 150px rgba(0,0,0,0.26),24px 36px 60px rgba(0,0,0,0.20)}
+.btn-side{position:absolute;width:7px;border-radius:4px;background:linear-gradient(90deg,#2a2b33,#15161a)}
+.glass{position:relative;width:694px;height:1502px;border-radius:100px;overflow:hidden;background:#020010}
+.screen{position:absolute;left:0;top:0;width:390px;height:844px;transform:scale(1.7795);transform-origin:0 0;background:#020010;color:#fff;overflow:hidden}
+.glare{position:absolute;inset:0;border-radius:100px;background:linear-gradient(118deg,rgba(255,255,255,0.13) 0%,rgba(255,255,255,0.04) 22%,rgba(255,255,255,0) 38%,rgba(255,255,255,0) 78%,rgba(255,255,255,0.05) 100%);pointer-events:none}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 0 7px;border-radius:12px;position:relative}
+.tab span{font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:1.5px;color:rgba(255,255,255,0.42)}
+.wd{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px}
+.wd b{font-family:'JetBrains Mono',monospace;font-weight:400;font-size:8.5px;letter-spacing:0.8px;color:rgba(255,255,255,0.32)}
+.wd .n{width:36px;height:36px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px}
+.wd .g{height:12px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.6px;color:rgba(255,255,255,0.32)}
+.mus{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.55)}
+.mus i{width:6px;height:6px;border-radius:3px}
+.met{flex:1;display:flex;flex-direction:column;align-items:center;padding:0 4px}
+.met .v{font-family:'Anton',sans-serif;font-size:20px;line-height:29px}
+.met .v small{font-family:'Archivo',sans-serif;font-size:12px;color:rgba(255,255,255,0.55)}
+.met .l{font-size:11.5px;color:rgba(255,255,255,0.55);margin-top:5px}
+.mring{width:64px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.mring .r{position:relative;width:60px;height:60px}
+.mring .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.mring .v{font-family:'Anton',sans-serif;font-size:17px;line-height:22px}
+.mring .g{font-size:9.5px;color:rgba(255,255,255,0.45);margin-top:1px}
+.mring .l{font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:1.1px;color:rgba(255,255,255,0.38);text-transform:uppercase;white-space:nowrap}
+.onposter .cap{color:rgba(255,255,255,0.5)}
+.onposter .mring .g{color:rgba(255,255,255,0.55)}
+.onposter .mring .l{color:rgba(255,255,255,0.6)}
+.onlight .cap{color:#5B6475}
+.float{position:absolute;left:0;top:0;transform-style:preserve-3d}
+.lift{box-shadow:0 2px 3px rgba(0,0,0,0.08),18px 30px 40px rgba(0,0,0,0.16),48px 80px 110px rgba(0,0,0,0.20)}
+</style>
+
+
+<div class="comp">
+
+  <!-- Brand + headline (same lockup as the Instagram pair, scaled 0.78) — inside the safe area -->
+  <div class="grp" style="left: 532px; top: 540px; width: 900px; height: 458px; transform: scale(0.78)">
+    <div class="abs" style="left: 8px; top: 0; display: flex; align-items: flex-end; gap: 18px; height: 66px">
+      <img src="ajfit-logo-azul.png" alt="AJ" style="height: 66px; width: auto; display: block">
+      <div style="display: flex; align-items: flex-end; gap: 8px">
+        <span class="anton" style="font-size: 57px; line-height: 55px; letter-spacing: 0.6px; color: #060220; text-transform: none">Fit</span>
+        <span style="width: 11px; height: 11px; border-radius: 6px; background: #060220; margin-bottom: 3px"></span>
+      </div>
+    </div>
+    <h1 class="abs anton" style="left: 0; top: 120px; margin: 0; font-size: 152px; line-height: 142px; letter-spacing: 0.5px; color: #060220; width: 900px">
+      <span class="skew">Treino e dieta</span><br>
+      <span class="skew">em um só app<span style="color: #0b70f9">.</span></span>
+    </h1>
+    <div class="abs" style="left: 8px; top: 438px; white-space: nowrap; font-family: 'JetBrains Mono',monospace; font-size: 16px; letter-spacing: 3.2px; text-transform: uppercase; color: rgba(6,2,32,0.48)">Treino personalizado <span style="color: #0b70f9">/</span> Dieta sob medida <span style="color: #0b70f9">/</span> Evolução</div>
+  </div>
+
+  <!-- Card — próxima refeição (outside the mobile crop; visible on desktop and TV) -->
+  <div class="grp" style="left: 92px; top: 584px; width: 466px; height: 351px; transform: scale(0.8)">
+    <div class="float" style="width: 466px; height: 351px; transform: perspective(1700px) rotateY(14deg) rotateX(7deg) rotateZ(-3deg); transform-origin: 40% 50%">
+      <div class="lift" style="width: 466px; height: 351px; border-radius: 30px; overflow: hidden">
+        <div class="onlight" style="width: 312px; height: 235px; transform: scale(1.4936); transform-origin: 0 0; box-sizing: border-box; padding: 18px; border-radius: 20px; background: #FFFFFF; border: 1px solid #D8DFE9; color: #101522">
+          <div style="display: flex; justify-content: space-between; align-items: center">
+            <span class="cap">Próxima refeição</span>
+            <span style="display: flex; align-items: center; gap: 4px; padding: 5px 10px; border-radius: 999px; background: #E9EEF6; border: 1px solid #D8DFE9; font-weight: 600; font-size: 12px; color: #374151">Almoço <svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="#5B6475" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+          <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 8px">
+            <div style="display: flex; align-items: center; gap: 10px"><span style="width: 4px; height: 4px; border-radius: 2px; background: #0b70f9"></span><span style="font-weight: 600; font-size: 15px; line-height: 22px">Arroz integral</span></div>
+            <div style="display: flex; align-items: center; gap: 10px"><span style="width: 4px; height: 4px; border-radius: 2px; background: #0b70f9"></span><span style="flex: 1; font-weight: 600; font-size: 15px; line-height: 22px">Filé de frango grelhado <span style="color: #5B6475">(+2)</span></span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="#5B6475" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </div>
+          <div style="display: flex; margin-top: 4px; padding-top: 14px; border-top: 1px solid #E1E6EE">
+            <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 16px">612</div><div style="font-size: 10.5px; color: #5B6475; margin-top: 3px">kcal</div></div>
+            <div style="width: 1px; background: #E1E6EE"></div>
+            <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 16px">46g</div><div style="font-size: 10px; color: #5B6475; margin-top: 3px">PROTEÍNA</div></div>
+            <div style="width: 1px; background: #E1E6EE"></div>
+            <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 16px">68g</div><div style="font-size: 8px; color: #5B6475; margin-top: 4px">CARBOIDRATOS</div></div>
+            <div style="width: 1px; background: #E1E6EE"></div>
+            <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 16px">16g</div><div style="font-size: 10px; color: #5B6475; margin-top: 3px">GORDURA</div></div>
+          </div>
+          <div style="margin-top: 16px; height: 42px; border-radius: 12px; border: 1px solid #C8D1DE; background: #E9EEF6; display: flex; align-items: center; gap: 10px; padding: 0 14px">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="#0b70f9" stroke-width="1.8" stroke-linecap="round"></path></svg>
+            <span style="flex: 1; font-weight: 600; font-size: 14px">Ver refeição</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="#5B6475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giant phone — Treino tab (scaled 0.68, centred on the safe band) -->
+  <div class="grp" style="left: 1523px; top: 203px; width: 730px; height: 1538px; transform: scale(0.65)">
+    <div class="phone">
+      <span class="btn-side" style="left: -5px; top: 270px; height: 60px"></span>
+      <span class="btn-side" style="left: -5px; top: 370px; height: 110px"></span>
+      <span class="btn-side" style="left: -5px; top: 500px; height: 110px"></span>
+      <span class="btn-side" style="right: -5px; top: 420px; height: 170px"></span>
+      <div class="glass">
+        <div class="screen">
+          <div style="position: absolute; left: 0; top: 0; width: 390px; height: 54px">
+            <span style="position: absolute; left: 44px; top: 17px; font-weight: 600; font-size: 16px">9:41</span>
+            <div style="position: absolute; left: 132px; top: 11px; width: 126px; height: 36px; border-radius: 18px; background: #000"></div>
+            <svg style="position: absolute; right: 30px; top: 20px" width="70" height="13" viewBox="0 0 70 13" aria-hidden="true">
+              <rect x="0" y="8" width="3" height="4" rx="1" fill="#fff"></rect><rect x="5" y="6" width="3" height="6" rx="1" fill="#fff"></rect><rect x="10" y="3" width="3" height="9" rx="1" fill="#fff"></rect><rect x="15" y="0" width="3" height="12" rx="1" fill="#fff"></rect>
+              <path d="M24 4.5a9 9 0 0 1 12 0M26.5 7.2a5.2 5.2 0 0 1 7 0M29 10a1.4 1.4 0 0 1 2 0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"></path>
+              <rect x="42.5" y="0.5" width="23" height="12" rx="3.5" fill="none" stroke="rgba(255,255,255,0.45)"></rect><rect x="44.5" y="2.5" width="19" height="8" rx="2" fill="#fff"></rect><rect x="67" y="4" width="2" height="5" rx="1" fill="rgba(255,255,255,0.45)"></rect>
+            </svg>
+          </div>
+          <div style="position: absolute; left: 22px; top: 90px; font-family: 'JetBrains Mono',monospace; font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.32)">QUA. · 28 OUT.</div>
+          <div style="position: absolute; left: 22px; top: 104px" class="anton"><span class="skew" style="font-size: 34px; line-height: 49px">Treino.</span></div>
+          <div style="position: absolute; left: 322px; top: 104px; width: 46px; height: 46px; border-radius: 13px; background: #0b70f9; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(11,112,249,0.45)"><span class="anton skew" style="font-size: 19px">AS</span></div>
+          <div style="position: absolute; left: 0; top: 169px; width: 390px; height: 32px; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; gap: 30px; padding-left: 22px; box-sizing: border-box; white-space: nowrap; font-family: 'JetBrains Mono',monospace; font-size: 10px; letter-spacing: 3px; color: rgba(255,255,255,0.32)">
+            <span>SEQUÊNCIA <b style="color: #4da3ff">12 DIAS</b></span>
+            <span>DIAS ATIVOS <b style="color: #4da3ff">18/24</b></span>
+            <span>ADERÊNCIA <b style="color: #4da3ff">92%</b></span>
+          </div>
+          <div style="position: absolute; left: 22px; top: 243px; width: 346px; display: flex">
+            <div class="wd"><b>SEG</b><span class="n">26</span><span class="g"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6" fill="none" stroke="#4da3ff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+            <div class="wd"><b>TER</b><span class="n" style="color: rgba(255,255,255,0.32)">27</span><span class="g"></span></div>
+            <div class="wd"><b style="color: #fff">QUA</b><span class="n" style="background: #fff; color: #020010">28</span><span class="g" style="color: #4da3ff">B</span></div>
+            <div class="wd"><b>QUI</b><span class="n" style="color: rgba(255,255,255,0.32)">29</span><span class="g"></span></div>
+            <div class="wd"><b>SEX</b><span class="n">30</span><span class="g">C</span></div>
+            <div class="wd"><b>SÁB</b><span class="n">31</span><span class="g">A</span></div>
+            <div class="wd"><b>DOM</b><span class="n" style="color: rgba(255,255,255,0.32)">1</span><span class="g"></span></div>
+          </div>
+          <div style="position: absolute; left: 22px; top: 346px; width: 346px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08)">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end">
+              <span class="lbl" style="color: rgba(255,255,255,0.32)">Treino de hoje</span>
+              <span style="font-size: 12.5px; color: rgba(255,255,255,0.55)">Treino B</span>
+            </div>
+            <div style="margin-top: 16px; font-weight: 700; font-size: 30px; line-height: 33px">Pernas</div>
+            <div style="margin-top: 18px; display: flex; flex-direction: column; gap: 6px">
+              <div class="mus" style="color: #fff"><i style="background: #4da3ff"></i>Quadríceps</div>
+              <div class="mus"><i style="background: #2c8afc"></i>Glúteos</div>
+              <div class="mus"><i style="background: #0b70f9"></i>Posteriores de coxa</div>
+            </div>
+            <div style="display: flex; margin-top: 22px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08)">
+              <div class="met"><span class="v">52<small> min</small></span><span class="l">Duração</span></div>
+              <div class="met" style="border-left: 1px solid rgba(255,255,255,0.08)"><span class="v">5</span><span class="l">Exercícios</span></div>
+              <div class="met" style="border-left: 1px solid rgba(255,255,255,0.08)"><span class="v">16</span><span class="l">Séries</span></div>
+            </div>
+            <div style="margin-top: 20px; height: 58px; border-radius: 12px; background: linear-gradient(180deg,#1f82ff,#0b70f9); display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 30px rgba(11,112,249,0.45)">
+              <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8V4z" fill="#fff"></path></svg>
+              <span class="anton" style="font-size: 17px; letter-spacing: 1.5px">Iniciar treino</span>
+            </div>
+          </div>
+          <div style="position: absolute; left: 22px; top: 736px; width: 346px">
+            <div class="lbl" style="color: rgba(255,255,255,0.32)">Exercícios</div>
+          </div>
+          <div style="position: absolute; left: 14px; top: 752px; width: 362px; padding: 7px; box-sizing: border-box; border-radius: 18px; background: #090720; border: 1px solid rgba(255,255,255,0.07); display: flex; box-shadow: 0 -8px 30px rgba(0,0,0,0.5)">
+            <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 01-2 2h-4v-7H9v7H5a2 2 0 01-2-2v-9z" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linejoin="round"></path></svg><span>HOME</span></div>
+            <div class="tab" style="background: rgba(11,112,249,0.16)"><i style="position: absolute; top: 0; left: 30%; right: 30%; height: 2px; border-radius: 2px; background: #4da3ff"></i><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6M7 6v12M17 6v12M21 9v6M7 12h10" fill="none" stroke="#4da3ff" stroke-width="2.1" stroke-linecap="round"></path></svg><span style="color: #4da3ff">TREINO</span></div>
+            <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2v7a2 2 0 002 2h4a2 2 0 002-2V2M7 2v20M21 15V2a5 5 0 00-5 5v6a2 2 0 002 2h3zM21 15v7" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>DIETA</span></div>
+            <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M6 16V10M11 16V6M16 16v-4M21 16V8" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linecap="round"></path></svg><span>EVOLUÇÃO</span></div>
+            <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7"></circle><path d="M4 21c0-4 4-7 8-7s8 3 8 7" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linecap="round"></path></svg><span>PERFIL</span></div>
+          </div>
+          <div style="position: absolute; left: 128px; top: 828px; width: 134px; height: 5px; border-radius: 3px; background: rgba(255,255,255,0.85)"></div>
+        </div>
+        <div class="glare"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card — métricas da dieta, in front of the phone's left bezel (inside the safe area) -->
+  <div class="grp" style="left: 1240px; top: 572px; width: 484px; height: 476px; transform: scale(0.62)">
+    <div class="float" style="width: 484px; height: 476px; transform: perspective(1700px) rotateY(15deg) rotateX(8deg) rotateZ(-6deg); transform-origin: 30% 50%">
+      <div class="lift" style="width: 484px; height: 476px; border-radius: 28px; overflow: hidden">
+        <div class="onposter" style="position: relative; width: 346px; height: 340px; transform: scale(1.4); transform-origin: 0 0; box-sizing: border-box; padding: 18px; border-radius: 20px; background: linear-gradient(160deg,#0a1a55 0%,#051042 45%,#04021c 100%); border: 1px solid rgba(11,112,249,0.42); color: #fff; overflow: hidden">
+          <div style="display: flex; justify-content: space-between; align-items: center">
+            <span class="cap">Hoje</span>
+            <span class="cap" style="color: #4da3ff">Dieta</span>
+          </div>
+          <div style="position: relative; width: 168px; height: 168px; margin: 12px auto 0">
+            <svg width="168" height="168" viewBox="0 0 168 168" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true">
+              <circle cx="84" cy="84" r="78" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="12"></circle>
+              <circle cx="84" cy="84" r="78" fill="none" stroke="#4da3ff" stroke-width="12" stroke-linecap="round" stroke-dasharray="490.1 490.1" stroke-dashoffset="276.4"></circle>
+            </svg>
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center">
+              <span class="cap">Faltam</span>
+              <span class="anton" style="font-size: 38px; line-height: 48px; margin-top: 2px">1240</span>
+              <span class="cap">kcal</span>
+              <span style="font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 6px">960 de 2200</span>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 14px; margin-top: 18px">
+            <div class="mring"><div class="r"><svg width="60" height="60" viewBox="0 0 60 60" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="4.5"></circle><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="174.36 174.36" stroke-dashoffset="54.7"></circle></svg><div class="c"><span class="v anton">94</span><span class="g">/137g</span></div></div><span class="l">Proteína</span></div>
+            <div class="mring"><div class="r"><svg width="60" height="60" viewBox="0 0 60 60" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="4.5"></circle><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="174.36 174.36" stroke-dashoffset="99.9"></circle></svg><div class="c"><span class="v anton">112</span><span class="g">/262g</span></div></div><span class="l" style="font-size: 7px; letter-spacing: 0.6px">Carboidratos</span></div>
+            <div class="mring"><div class="r"><svg width="60" height="60" viewBox="0 0 60 60" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="4.5"></circle><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="174.36 174.36" stroke-dashoffset="87.2"></circle></svg><div class="c"><span class="v anton">34</span><span class="g">/68g</span></div></div><span class="l">Gordura</span></div>
+            <div class="mring"><div class="r"><svg width="60" height="60" viewBox="0 0 60 60" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="4.5"></circle><circle cx="30" cy="30" r="27.75" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="174.36 174.36" stroke-dashoffset="87.2"></circle></svg><div class="c"><span class="v anton">15</span><span class="g">/30g</span></div></div><span class="l">Fibra</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- App actions (outside the mobile crop; visible on desktop and TV) -->
+  <div class="grp" style="left: 2096px; top: 612px; transform: scale(0.85)">
+    <div class="float" style="transform: perspective(1600px) rotateY(-10deg) rotateZ(2deg)">
+      <div class="lift" style="height: 82px; padding: 0 30px 0 12px; border-radius: 22px; background: #FFFFFF; border: 1px solid #D8DFE9; display: flex; align-items: center; gap: 18px; box-sizing: border-box; white-space: nowrap">
+        <span style="width: 60px; height: 60px; border-radius: 18px; background: linear-gradient(180deg,#4da3ff,#0b70f9); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"></path></svg></span>
+        <span style="font-weight: 600; font-size: 23px; color: #101522">Registrar refeição</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grp" style="left: 2096px; top: 714px; transform: scale(0.85)">
+    <div class="float" style="transform: perspective(1600px) rotateY(-10deg) rotateZ(2deg)">
+      <div class="lift" style="width: 360px; padding: 16px 26px 16px 12px; border-radius: 24px; background: #0b0922; border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 12px; box-sizing: border-box">
+        <svg width="78" height="78" viewBox="17 17 66 66" style="flex: none; filter: drop-shadow(0 0 9px rgba(11,112,249,0.6))" aria-hidden="true">
+          <path d="M50 35 L29.5 64 L70.5 64 Z" fill="#071242" stroke="#071242" stroke-width="7" stroke-linejoin="round"></path>
+          <path d="M35.4 40.9 L29.8 49.1 M64.6 40.9 L70.2 49.1" stroke="#3d8bff" stroke-width="2.6" stroke-linecap="round"></path>
+          <path d="M41 68 L76 68 L50 30 L24 68 L35.5 68" fill="none" stroke="#f3f6ff" stroke-width="7.6" stroke-linejoin="round"></path>
+          <path d="M40.8 71.8 L40.8 61 Q40.8 59.8 41.8 60.5 L47.8 64.8 L47.8 71.8 Z" fill="#f3f6ff" stroke="#f3f6ff" stroke-width="1.2" stroke-linejoin="round"></path>
+          <g fill="none" stroke="#8fd0ff" stroke-width="2.6" stroke-linecap="round"><path d="M39.6 53.4 A3.7 3.7 0 0 1 47 53.4"></path><path d="M53 53.4 A3.7 3.7 0 0 1 60.4 53.4"></path></g>
+          <path d="M45.8 56.4 Q50 61.2 54.2 56.4" fill="none" stroke="#8fd0ff" stroke-width="2.2" stroke-linecap="round"></path>
+        </svg>
+        <p style="margin: 0; font-size: 19px; line-height: 27px; color: rgba(255,255,255,0.78)">Pronto, Ana. Este é o plano que montei para você.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

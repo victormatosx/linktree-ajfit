@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>AJ Fit — Treino e dieta em um só app</title>
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=block" rel="stylesheet">
+<style>
+body{margin:0}
+.comp{position:relative;width:2160px;height:1350px;overflow:hidden;background:#F6F7FA;font-family:'Archivo',sans-serif;color:#060220}
+.abs{position:absolute}
+.mono{font-family:'JetBrains Mono',monospace;text-transform:uppercase}
+.anton{font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400}
+.skew{display:inline-block;transform:skewX(-8deg);transform-origin:left bottom}
+/* floating app surfaces */
+.panel{background:#0b0922;border:1px solid rgba(255,255,255,0.07);border-radius:28px;color:#fff;box-shadow:0 2px 4px rgba(6,2,32,0.06),0 18px 36px rgba(6,2,32,0.14),0 46px 90px rgba(6,2,32,0.16)}
+.cap{font-family:'JetBrains Mono',monospace;text-transform:uppercase;font-size:15px;letter-spacing:2.4px;color:rgba(255,255,255,0.38)}
+/* phone */
+.phone{left:1352px;top:78px;width:535px;height:1125px;border-radius:84px;background:linear-gradient(140deg,#3a3d4a 0%,#15161d 22%,#0c0c12 60%,#2a2c36 100%);padding:14px;box-sizing:border-box;transform:perspective(2600px) rotateY(14deg) rotateZ(-3deg);transform-origin:50% 60%;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,0.18),inset 0 0 0 4px #050508,-50px 60px 110px rgba(6,2,32,0.28),-16px 24px 40px rgba(6,2,32,0.20)}
+.btn-side{position:absolute;width:5px;border-radius:3px;background:#22242c}
+.glass{position:relative;width:507px;height:1097px;border-radius:70px;overflow:hidden;background:#020010}
+.screen{position:absolute;left:0;top:0;width:390px;height:844px;transform:scale(1.3);transform-origin:0 0;background:#020010;color:#fff;overflow:hidden}
+.glare{position:absolute;inset:0;border-radius:70px;background:linear-gradient(115deg,rgba(255,255,255,0.10) 0%,rgba(255,255,255,0.02) 28%,rgba(255,255,255,0) 45%);pointer-events:none}
+.lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.38)}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 0 7px;border-radius:12px;position:relative}
+.tab span{font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:1.5px;color:rgba(255,255,255,0.42)}
+.day{width:28px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.day b{font-family:'JetBrains Mono',monospace;font-weight:400;font-size:10.5px;color:rgba(255,255,255,0.38)}
+.dot{width:26px;height:26px;border-radius:13px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+.ring-lbl{font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:1.6px;color:rgba(255,255,255,0.38);text-transform:uppercase;text-align:center}
+</style>
+
+
+<div class="comp">
+
+  <!-- Continuous brand geometry: a giant "A" whose apex sits above the seam -->
+  <svg class="abs" style="left: 0; top: 0" width="2160" height="1350" viewBox="0 0 2160 1350" aria-hidden="true">
+    <polyline points="-60,1420 1080,-250 2220,1420" fill="none" stroke="rgba(11,112,249,0.055)" stroke-width="190" stroke-linejoin="miter"></polyline>
+    <polyline points="-160,1420 1080,-400 2320,1420" fill="none" stroke="rgba(6,2,32,0.07)" stroke-width="1.5"></polyline>
+  </svg>
+
+  <!-- ================= LEFT POST (0–1080) ================= -->
+
+  <!-- Wordmark: official mark + "Fit." exactly as the app's splash composes it -->
+  <div class="abs" style="left: 96px; top: 90px; display: flex; align-items: flex-end; gap: 13px; height: 48px">
+    <img src="ajfit-logo-azul.png" alt="AJ" style="height: 48px; width: auto; display: block">
+    <div style="display: flex; align-items: flex-end; gap: 6px">
+      <span class="anton" style="font-size: 41px; line-height: 40px; letter-spacing: 0.4px; color: #060220; text-transform: none">Fit</span>
+      <span style="width: 8px; height: 8px; border-radius: 4px; background: #060220; margin-bottom: 2px"></span>
+    </div>
+  </div>
+  <div class="abs mono" style="right: 1176px; top: 108px; font-size: 15px; letter-spacing: 3px; color: rgba(6,2,32,0.45); text-align: right; width: 420px">Treino · Dieta · Evolução</div>
+
+  <div class="abs mono" style="left: 96px; top: 238px; font-size: 17px; letter-spacing: 4px; color: #0b70f9; font-weight: 700">// Seu plano completo</div>
+
+  <h1 class="abs anton" style="left: 96px; top: 272px; margin: 0; font-size: 132px; line-height: 136px; letter-spacing: 1px; color: #060220; width: 920px">
+    <span class="skew">Treino e dieta</span><br>
+    <span class="skew">em um só app<span style="color: #0b70f9">.</span></span>
+  </h1>
+
+  <p class="abs" style="left: 98px; top: 572px; margin: 0; width: 700px; font-size: 27px; line-height: 40px; color: rgba(6,2,32,0.66)">Treinos personalizados, alimentação sob medida e a sua evolução acompanhada de perto. Tudo no mesmo lugar.</p>
+
+  <!-- Card A — Dieta: kcal hero ring (DailyNutritionSummary) -->
+  <div class="abs panel" style="left: 96px; bottom: 170px; width: 356px; padding: 26px 26px 30px; box-sizing: border-box">
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <span class="cap">Hoje</span>
+      <span class="cap" style="color: #4da3ff">Dieta</span>
+    </div>
+    <div style="position: relative; width: 268px; height: 268px; margin: 22px auto 0">
+      <svg width="268" height="268" viewBox="0 0 268 268" style="position: absolute; left: 0; top: 0; transform: rotate(-90deg)" aria-hidden="true">
+        <circle cx="134" cy="134" r="126" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="16"></circle>
+        <circle cx="134" cy="134" r="126" fill="none" stroke="#4da3ff" stroke-width="16" stroke-linecap="round" stroke-dasharray="791.68 791.68" stroke-dashoffset="446.08"></circle>
+      </svg>
+      <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <span class="mono" style="font-size: 13px; letter-spacing: 2px; color: rgba(255,255,255,0.38)">Faltam</span>
+        <span class="anton" style="font-size: 66px; line-height: 80px; margin-top: 4px">1240</span>
+        <span class="mono" style="font-size: 13px; letter-spacing: 2px; color: rgba(255,255,255,0.38)">kcal</span>
+        <span style="font-size: 16px; color: rgba(255,255,255,0.45); margin-top: 12px">960 de 2200</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card B — Dieta: next meal (MealCard variant="next") -->
+  <div class="abs panel" style="left: 480px; bottom: 170px; width: 504px; padding: 28px; box-sizing: border-box">
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <span class="cap">Próxima refeição</span>
+      <span style="display: flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); font-weight: 600; font-size: 17px; color: rgba(255,255,255,0.65)">Almoço
+        <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </span>
+    </div>
+    <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; gap: 14px"><span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.65)"></span><span style="font-weight: 600; font-size: 22px; line-height: 32px">Arroz integral</span></div>
+      <div style="display: flex; align-items: center; gap: 14px"><span style="width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.65)"></span><span style="font-weight: 600; font-size: 22px; line-height: 32px">Filé de frango grelhado <span style="color: rgba(255,255,255,0.65)">(+2)</span></span></div>
+    </div>
+    <div style="display: flex; margin-top: 18px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.07)">
+      <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 24px">612</div><div style="font-size: 14.5px; color: rgba(255,255,255,0.45); margin-top: 4px">kcal</div></div>
+      <div style="width: 1px; background: rgba(255,255,255,0.07)"></div>
+      <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 24px">46g</div><div style="font-size: 14.5px; color: rgba(255,255,255,0.45); margin-top: 4px">PROTEÍNA</div></div>
+      <div style="width: 1px; background: rgba(255,255,255,0.07)"></div>
+      <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 24px">68g</div><div style="font-size: 14.5px; color: rgba(255,255,255,0.45); margin-top: 4px">CARBOS</div></div>
+      <div style="width: 1px; background: rgba(255,255,255,0.07)"></div>
+      <div style="flex: 1; text-align: center"><div style="font-weight: 700; font-size: 24px">16g</div><div style="font-size: 14.5px; color: rgba(255,255,255,0.45); margin-top: 4px">GORDURA</div></div>
+    </div>
+    <div style="margin-top: 24px; height: 62px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.03); display: flex; align-items: center; gap: 12px; padding: 0 20px">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"></path></svg>
+      <span style="flex: 1; font-weight: 600; font-size: 20px">Ver refeição</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+  </div>
+
+  <!-- ===== Shared program-evolution bar (SegBar) — runs across both posts ===== -->
+  <div class="abs" style="left: 96px; top: 1236px; width: 645px; height: 4px; border-radius: 2px; background: #0b70f9"></div>
+  <div class="abs" style="left: 757px; top: 1236px; width: 645px; height: 4px; border-radius: 2px; background: rgba(6,2,32,0.09); overflow: hidden"><div style="width: 520px; height: 4px; background: linear-gradient(90deg,#0b70f9,#4da3ff)"></div></div>
+  <div class="abs" style="left: 1418px; top: 1236px; width: 646px; height: 4px; border-radius: 2px; background: rgba(6,2,32,0.09)"></div>
+  <div class="abs mono" style="left: 96px; top: 1260px; font-size: 15px; letter-spacing: 3px; color: rgba(6,2,32,0.5)">Evolução do programa</div>
+  <div class="abs mono" style="left: 1418px; top: 1260px; width: 646px; text-align: right; font-size: 15px; letter-spacing: 3px; color: #0b70f9; font-weight: 700">Intermediário · Ciclo 2</div>
+
+  <!-- ================= RIGHT POST (1080–2160) ================= -->
+
+  <!-- floor shadow under the phone, spilling toward the seam -->
+  <div class="abs" style="left: 1230px; top: 1150px; width: 640px; height: 80px; border-radius: 50%; background: radial-gradient(closest-side, rgba(6,2,32,0.22), rgba(6,2,32,0)); filter: blur(8px)"></div>
+
+  <!-- Phone -->
+  <div class="abs phone">
+    <span class="btn-side" style="left: -4px; top: 210px; height: 46px"></span>
+    <span class="btn-side" style="left: -4px; top: 290px; height: 86px"></span>
+    <span class="btn-side" style="left: -4px; top: 392px; height: 86px"></span>
+    <span class="btn-side" style="right: -4px; top: 330px; height: 130px"></span>
+    <div class="glass">
+      <div class="screen">
+
+        <!-- status bar -->
+        <div style="position: absolute; left: 0; top: 0; width: 390px; height: 54px">
+          <span style="position: absolute; left: 44px; top: 17px; font-weight: 600; font-size: 16px; letter-spacing: 0.2px">9:41</span>
+          <div style="position: absolute; left: 132px; top: 11px; width: 126px; height: 36px; border-radius: 18px; background: #000"></div>
+          <svg style="position: absolute; right: 30px; top: 20px" width="70" height="13" viewBox="0 0 70 13" aria-hidden="true">
+            <rect x="0" y="8" width="3" height="4" rx="1" fill="#fff"></rect><rect x="5" y="6" width="3" height="6" rx="1" fill="#fff"></rect><rect x="10" y="3" width="3" height="9" rx="1" fill="#fff"></rect><rect x="15" y="0" width="3" height="12" rx="1" fill="#fff"></rect>
+            <path d="M24 4.5a9 9 0 0 1 12 0M26.5 7.2a5.2 5.2 0 0 1 7 0M29 10a1.4 1.4 0 0 1 2 0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"></path>
+            <rect x="42.5" y="0.5" width="23" height="12" rx="3.5" fill="none" stroke="rgba(255,255,255,0.45)"></rect><rect x="44.5" y="2.5" width="19" height="8" rx="2" fill="#fff"></rect><rect x="67" y="4" width="2" height="5" rx="1" fill="rgba(255,255,255,0.45)"></rect>
+          </svg>
+        </div>
+
+        <!-- header -->
+        <div style="position: absolute; left: 22px; top: 70px" class="lbl">Seg. · 26 out.</div>
+        <div style="position: absolute; left: 22px; top: 82px" class="anton"><span class="skew" style="font-size: 34px; line-height: 49px">E aí, Ana.</span></div>
+        <div style="position: absolute; left: 277px; top: 80px; width: 42px; height: 42px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.03); box-sizing: border-box; display: flex; align-items: center; justify-content: center">
+          <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z" fill="none" stroke="#4da3ff" stroke-width="1.7" stroke-linejoin="round"></path></svg>
+        </div>
+        <div style="position: absolute; left: 327px; top: 80px; width: 42px; height: 42px; border-radius: 12px; background: #0b70f9; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(11,112,249,0.45)">
+          <span class="anton skew" style="font-size: 18px">AS</span>
+        </div>
+
+        <!-- ticker -->
+        <div style="position: absolute; left: 0; top: 140px; width: 390px; height: 30px; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; gap: 30px; padding-left: 14px; box-sizing: border-box; white-space: nowrap">
+          <span class="lbl" style="color: rgba(255,255,255,0.32)">Sequência <b style="color: #4da3ff">12 dias</b></span>
+          <span class="lbl" style="color: rgba(255,255,255,0.32)">Dias ativos <b style="color: #4da3ff">18/24</b></span>
+          <span class="lbl" style="color: rgba(255,255,255,0.32)">Aderência <b style="color: #4da3ff">92%</b></span>
+        </div>
+
+        <!-- today hero card -->
+        <div style="position: absolute; left: 22px; top: 200px; width: 346px; height: 296px; border-radius: 20px; border: 1px solid rgba(11,112,249,0.42); background: linear-gradient(160deg,#0a1a55 0%,#051042 45%,#04021c 100%); box-sizing: border-box; overflow: hidden">
+          <div style="position: absolute; left: 8px; top: 8px; width: 13px; height: 13px; border-left: 1.5px solid rgba(77,163,255,0.65); border-top: 1.5px solid rgba(77,163,255,0.65)"></div>
+          <div style="position: absolute; right: 8px; bottom: 8px; width: 13px; height: 13px; border-right: 1.5px solid rgba(77,163,255,0.65); border-bottom: 1.5px solid rgba(77,163,255,0.65)"></div>
+          <div style="position: absolute; left: 22px; top: 25px; display: flex; gap: 10px" class="lbl"><span style="color: #4da3ff; letter-spacing: 0">//</span><span style="color: rgba(255,255,255,0.5)">Hoje · Treino B</span></div>
+          <div style="position: absolute; left: 20px; top: 46px" class="anton"><span class="skew" style="font-size: 40px; line-height: 58px">Agachamento</span></div>
+          <div style="position: absolute; left: 21px; top: 118px; font-family: 'JetBrains Mono',monospace; font-size: 10.5px; letter-spacing: 2px; color: rgba(255,255,255,0.72)">5 EXERCÍCIOS · 16 SÉRIES</div>
+          <div style="position: absolute; left: 21px; top: 158px; display: flex; gap: 8px">
+            <span style="padding: 6px 10px; border-radius: 8px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); font-family: 'JetBrains Mono',monospace; font-size: 9.5px; letter-spacing: 1.4px; color: rgba(255,255,255,0.65)">QUADRÍCEPS</span>
+            <span style="padding: 6px 10px; border-radius: 8px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); font-family: 'JetBrains Mono',monospace; font-size: 9.5px; letter-spacing: 1.4px; color: rgba(255,255,255,0.65)">GLÚTEOS</span>
+          </div>
+          <div style="position: absolute; left: 21px; top: 216px; width: 172px; height: 50px; border-radius: 10px; background: #fff; display: flex; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 10px 30px rgba(11,112,249,0.35)">
+            <svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8V4z" fill="#020010"></path></svg>
+            <span class="anton" style="font-size: 17px; letter-spacing: 1.5px; color: #020010">Iniciar treino</span>
+          </div>
+        </div>
+
+        <!-- program evolution -->
+        <div style="position: absolute; left: 22px; top: 527px; width: 346px; display: flex; justify-content: space-between" class="lbl"><span>Evolução do programa</span><span style="color: rgba(255,255,255,0.7)">Interm. · Ciclo 2</span></div>
+        <div style="position: absolute; left: 22px; top: 550px; width: 346px; display: flex; gap: 4px">
+          <div style="flex: 1; height: 3px; border-radius: 2px; background: #4da3ff"></div>
+          <div style="flex: 1; height: 3px; border-radius: 2px; background: rgba(255,255,255,0.09); overflow: hidden"><div style="width: 80%; height: 3px; background: #4da3ff"></div></div>
+          <div style="flex: 1; height: 3px; border-radius: 2px; background: rgba(255,255,255,0.09)"></div>
+        </div>
+        <div style="position: absolute; left: 22px; top: 566px" class="lbl">Criando consistência</div>
+
+        <!-- this week -->
+        <div style="position: absolute; left: 22px; top: 606px; width: 346px; display: flex; justify-content: space-between" class="lbl"><span>Esta semana</span><span style="color: rgba(255,255,255,0.7)">3 de 5 treinos concluídos</span></div>
+        <div style="position: absolute; left: 22px; top: 632px; width: 346px; display: flex; justify-content: space-between">
+          <div class="day"><b>S</b><span class="dot" style="background: rgba(11,112,249,0.28); border: 1px solid rgba(11,112,249,0.5)"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6" fill="none" stroke="#7db4ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+          <div class="day"><b>T</b><span class="dot" style="background: rgba(11,112,249,0.28); border: 1px solid rgba(11,112,249,0.5)"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6" fill="none" stroke="#7db4ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+          <div class="day"><b>Q</b><span class="dot" style="color: rgba(255,255,255,0.4); font-family: 'JetBrains Mono',monospace; font-size: 11px">–</span></div>
+          <div class="day"><b>Q</b><span class="dot" style="background: rgba(11,112,249,0.28); border: 1px solid rgba(11,112,249,0.5)"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6" fill="none" stroke="#7db4ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+          <div class="day"><b style="color: #4da3ff">S</b><span class="dot" style="background: linear-gradient(180deg,#1f82ff,#0b70f9); border: 1px solid #7db4ff; box-shadow: 0 0 14px rgba(11,112,249,0.6)"><span style="width: 7px; height: 7px; border-radius: 4px; border: 1.6px solid #fff"></span></span></div>
+          <div class="day"><b>S</b><span class="dot" style="border: 1px solid rgba(11,112,249,0.55)"><span style="width: 7px; height: 7px; border-radius: 4px; border: 1.6px solid #7db4ff"></span></span></div>
+          <div class="day"><b>D</b><span class="dot" style="color: rgba(255,255,255,0.4); font-family: 'JetBrains Mono',monospace; font-size: 11px">–</span></div>
+        </div>
+
+        <!-- frequency -->
+        <div style="position: absolute; left: 22px; top: 708px" class="lbl">Sua frequência</div>
+        <div style="position: absolute; left: 0; top: 728px; width: 390px; text-align: center" class="lbl"><span style="color: rgba(255,255,255,0.6)">‹ &nbsp; 27 de set. — 26 de out. &nbsp; ›</span></div>
+
+        <!-- tab bar -->
+        <div style="position: absolute; left: 14px; top: 758px; width: 362px; padding: 7px; box-sizing: border-box; border-radius: 18px; background: #090720; border: 1px solid rgba(255,255,255,0.07); display: flex; box-shadow: 0 -8px 30px rgba(0,0,0,0.5)">
+          <div class="tab" style="background: rgba(11,112,249,0.16)"><i style="position: absolute; top: 0; left: 30%; right: 30%; height: 2px; border-radius: 2px; background: #4da3ff"></i><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 01-2 2h-4v-7H9v7H5a2 2 0 01-2-2v-9z" fill="none" stroke="#4da3ff" stroke-width="2.1" stroke-linejoin="round"></path></svg><span style="color: #4da3ff">HOME</span></div>
+          <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6M7 6v12M17 6v12M21 9v6M7 12h10" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linecap="round"></path></svg><span>TREINO</span></div>
+          <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2v7a2 2 0 002 2h4a2 2 0 002-2V2M7 2v20M21 15V2a5 5 0 00-5 5v6a2 2 0 002 2h3zM21 15v7" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>DIETA</span></div>
+          <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M6 16V10M11 16V6M16 16v-4M21 16V8" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linecap="round"></path></svg><span>EVOLUÇÃO</span></div>
+          <div class="tab"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7"></circle><path d="M4 21c0-4 4-7 8-7s8 3 8 7" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="1.7" stroke-linecap="round"></path></svg><span>PERFIL</span></div>
+        </div>
+        <div style="position: absolute; left: 128px; top: 830px; width: 134px; height: 5px; border-radius: 3px; background: rgba(255,255,255,0.85)"></div>
+      </div>
+      <div class="glare"></div>
+    </div>
+  </div>
+
+  <!-- Jotinha — the app's own AJ assistant, with a real line from the plan reveal -->
+  <div class="abs panel" style="left: 1700px; top: 548px; width: 380px; padding: 22px 26px 22px 18px; box-sizing: border-box; display: flex; align-items: center; gap: 14px">
+    <svg width="92" height="92" viewBox="17 17 66 66" style="flex: none; filter: drop-shadow(0 0 10px rgba(11,112,249,0.6))" aria-hidden="true">
+      <path d="M50 35 L29.5 64 L70.5 64 Z" fill="#071242" stroke="#071242" stroke-width="7" stroke-linejoin="round"></path>
+      <path d="M35.4 40.9 L29.8 49.1 M64.6 40.9 L70.2 49.1" stroke="#3d8bff" stroke-width="2.6" stroke-linecap="round"></path>
+      <path d="M41 68 L76 68 L50 30 L24 68 L35.5 68" fill="none" stroke="#f3f6ff" stroke-width="7.6" stroke-linejoin="round"></path>
+      <path d="M40.8 71.8 L40.8 61 Q40.8 59.8 41.8 60.5 L47.8 64.8 L47.8 71.8 Z" fill="#f3f6ff" stroke="#f3f6ff" stroke-width="1.2" stroke-linejoin="round"></path>
+      <g fill="none" stroke="#8fd0ff" stroke-width="2.6" stroke-linecap="round"><path d="M39.6 53.4 A3.7 3.7 0 0 1 47 53.4"></path><path d="M53 53.4 A3.7 3.7 0 0 1 60.4 53.4"></path></g>
+      <path d="M45.8 56.4 Q50 61.2 54.2 56.4" fill="none" stroke="#8fd0ff" stroke-width="2.2" stroke-linecap="round"></path>
+    </svg>
+    <p style="margin: 0; font-size: 21px; line-height: 30px; color: rgba(255,255,255,0.78)">Pronto, Ana. Este é o plano que montei para você.</p>
+  </div>
+
+  <!-- Dieta — macro rings (MacroProgress) -->
+  <div class="abs panel" style="left: 1136px; top: 812px; padding: 24px 26px 26px; box-sizing: border-box">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px">
+      <span class="cap">Macros de hoje</span>
+      <span class="cap" style="color: #4da3ff">Dieta</span>
+    </div>
+    <div style="display: flex; gap: 20px">
+      <div style="width: 96px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+        <div style="position: relative; width: 92px; height: 92px">
+          <svg width="92" height="92" viewBox="0 0 92 92" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="7"></circle><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="7" stroke-linecap="round" stroke-dasharray="267.04 267.04" stroke-dashoffset="83.8"></circle></svg>
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center"><span class="anton" style="font-size: 25px; line-height: 30px">94</span><span style="font-size: 13px; color: rgba(255,255,255,0.45)">/137g</span></div>
+        </div>
+        <span class="ring-lbl">Proteína</span>
+      </div>
+      <div style="width: 96px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+        <div style="position: relative; width: 92px; height: 92px">
+          <svg width="92" height="92" viewBox="0 0 92 92" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="7"></circle><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="7" stroke-linecap="round" stroke-dasharray="267.04 267.04" stroke-dashoffset="152.2"></circle></svg>
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center"><span class="anton" style="font-size: 25px; line-height: 30px">112</span><span style="font-size: 13px; color: rgba(255,255,255,0.45)">/262g</span></div>
+        </div>
+        <span class="ring-lbl">Carbos</span>
+      </div>
+      <div style="width: 96px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+        <div style="position: relative; width: 92px; height: 92px">
+          <svg width="92" height="92" viewBox="0 0 92 92" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="7"></circle><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="7" stroke-linecap="round" stroke-dasharray="267.04 267.04" stroke-dashoffset="133.5"></circle></svg>
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center"><span class="anton" style="font-size: 25px; line-height: 30px">34</span><span style="font-size: 13px; color: rgba(255,255,255,0.45)">/68g</span></div>
+        </div>
+        <span class="ring-lbl">Gordura</span>
+      </div>
+      <div style="width: 96px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+        <div style="position: relative; width: 92px; height: 92px">
+          <svg width="92" height="92" viewBox="0 0 92 92" style="position: absolute; transform: rotate(-90deg)" aria-hidden="true"><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="7"></circle><circle cx="46" cy="46" r="42.5" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="7" stroke-linecap="round" stroke-dasharray="267.04 267.04" stroke-dashoffset="133.5"></circle></svg>
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center"><span class="anton" style="font-size: 25px; line-height: 30px">15</span><span style="font-size: 13px; color: rgba(255,255,255,0.45)">/30g</span></div>
+        </div>
+        <span class="ring-lbl">Fibra</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

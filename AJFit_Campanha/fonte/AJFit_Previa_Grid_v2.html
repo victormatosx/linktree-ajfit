@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>AJ Fit v2 — Prévia no grid</title>
+</head>
+<body>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=block" rel="stylesheet">
+<style>
+body{margin:0}
+.mono{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:3px}
+.ph{background:#DEDEDE;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:rgba(0,0,0,0.35)}
+.thumb{width:196px;height:261px;overflow:hidden;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+
+<div style="width: 1440px; height: 900px; box-sizing: border-box; padding: 72px 80px; background: #EEEEEE; font-family: 'Archivo',sans-serif; color: #060220; display: flex; gap: 80px">
+
+  <div style="display: flex; flex-direction: column; gap: 20px">
+    <div class="mono" style="font-size: 14px; color: rgba(0,0,0,0.5)">Perfil · grid 3 colunas (miniatura 3:4)</div>
+    <div style="width: 600px; background: #fff; border-radius: 24px; padding: 22px 0 0; box-shadow: 0 20px 50px rgba(0,0,0,0.10); overflow: hidden">
+      <div style="display: flex; justify-content: space-around; padding: 0 0 16px; border-bottom: 1px solid rgba(0,0,0,0.08)">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3zM9 3v18M15 3v18M3 9h18M3 15h18" fill="none" stroke="#111" stroke-width="1.6"></path></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="1.6"></rect><path d="M10 9l5 3-5 3z" fill="rgba(0,0,0,0.35)"></path></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="4" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="1.6"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="1.6"></path></svg>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; padding-top: 2px">
+        <div class="thumb"><img src="../v2/AJFit_Post_Esquerda_v2.png" alt="Post esquerdo v2"></div>
+        <div class="thumb"><img src="../v2/AJFit_Post_Direita_v2.png" alt="Post direito v2"></div>
+        <div class="thumb ph">POST ANTERIOR</div>
+        <div class="thumb ph">POST ANTERIOR</div>
+        <div class="thumb ph">POST ANTERIOR</div>
+        <div class="thumb ph">POST ANTERIOR</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 20px">
+    <div class="mono" style="font-size: 14px; color: rgba(0,0,0,0.5)">Lado a lado · formato real 4:5</div>
+    <div style="display: flex; box-shadow: 0 20px 50px rgba(0,0,0,0.10)">
+      <img src="../v2/AJFit_Post_Esquerda_v2.png" alt="Post esquerdo 1080×1350" style="width: 300px; height: 375px; display: block">
+      <img src="../v2/AJFit_Post_Direita_v2.png" alt="Post direito 1080×1350" style="width: 300px; height: 375px; display: block">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 18px">
+      <div class="mono" style="font-size: 14px; color: rgba(0,0,0,0.5)">Ordem de publicação</div>
+      <div style="display: flex; align-items: center; gap: 14px"><span style="width: 36px; height: 36px; border-radius: 10px; background: #0b70f9; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Anton',sans-serif; font-size: 18px">1</span><span style="font-size: 20px; font-weight: 600">Primeiro: AJFit_Post_Direita_v2.png</span></div>
+      <div style="display: flex; align-items: center; gap: 14px"><span style="width: 36px; height: 36px; border-radius: 10px; background: #060220; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Anton',sans-serif; font-size: 18px">2</span><span style="font-size: 20px; font-weight: 600">Depois: AJFit_Post_Esquerda_v2.png</span></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
